@@ -1,0 +1,24 @@
+{
+  "name": "@colinrotherham/polyfill-playground",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Examples for Babel with core-js-pure",
+  "license": "MIT",
+  "type": "module",
+  "author": "Colin Rotherham",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "standard",
+    "build": "babel ./src --out-dir ./dist"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.20.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "standard": "^17.0.0"
+  }
+}
