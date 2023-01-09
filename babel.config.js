@@ -4,11 +4,10 @@ export default () => ({
 
   plugins: [
     // Replace unsupported code with `core-js-pure` ponyfills
-    ['@babel/plugin-transform-runtime', {
-      corejs: {
-        version: 3,
-        proposals: true
-      }
+    '@babel/plugin-transform-runtime',
+    ['polyfill-corejs3', {
+      method: 'usage-pure',
+      proposals: true
     }]
   ],
 
